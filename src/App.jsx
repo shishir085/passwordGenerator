@@ -19,6 +19,7 @@ function App() {
   
   
   }, [password])
+  
   const passwordGenerator = useCallback(() => {
     let pass = ""
     let str = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm"
