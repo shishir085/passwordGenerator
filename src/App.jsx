@@ -8,12 +8,12 @@ function App() {
   let [charAllowed, setCharAllowed] = useState(false)
   let [password, setPassword] = useState("")
 
-  // useRef hook
+
   const passwordRef = useRef(null)
 
   const copyPassToClipboard = useCallback(() => {
     passwordRef.current?.select()
-    // passwordRef.current?.setSelectionRange(0,3)
+   
     window.navigator.clipboard.writeText(password)
    
   
